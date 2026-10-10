@@ -65,13 +65,18 @@ const App = () => {
     return false
 }
 
+  const handleNewGame = () => {
+    setScore(0)
+    setClickedCards([])
+}
+
   
 
   return (
 
     <div className="App">
       <h1>Magic Match</h1>
-      <button >New Game</button>   
+      <button onClick={handleNewGame} >New Game</button>   
       
       <div className='score-board'>
         <div className='score'>score: {score}</div>
